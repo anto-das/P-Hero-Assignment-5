@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+     <!-- daisy ui link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- font awesome link -->
+     <script src="https://kit.fontawesome.com/91806e45ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="max-w-screen-lg mx-auto py-3">
+      <div class="navbar">
+          <div class="navbar-start">
+            <button id="home-btn" class="w-20 h-12 rounded-lg font-bold bg-[#B4F461]">Home</button>
+          </div>
+          <div class="">
+              <img src="./assets/logo.png" alt="just a logo">
+              <h4 class="font-bold ml-2 invisible lg:visible">Donate Bangladesh</h4>
+          </div>
+          <div class="navbar-end font-semibold color-[#111111B3]">
+              <img src="./assets/coin.png" alt="coin">
+              <span  class="font-semibold mx-1">5000</span>BDT
+          </div>
+        </div>
+       
+  </nav>
+  </header>
+
+  <main>
+    <!-- important FAQ start -->
+    <div class="mx-0 lg:mx-5 md:mx-3">
+      <h1 class="text-3xl m-5 font-bold">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+      <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is Document Object Modal(DOM)?</div>
+          <div class="collapse-content">
+            <p>The DOM object model represents HTML elements as objects, allowing JavaScript to interact with them programmatically.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">How do you select on element from the DOM?</div>
+          <div class="collapse-content">
+            <p>To select an element from the DOM, you can use methods like `document.getElementById()`, `document.querySelector()`, or `document.getElementsByClassName()` to target specific elements by their ID, class, or selector.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">What is Event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation in the DOM is a technique where a single event listener is attached to a parent element to manage events for multiple child elements. Instead of adding individual listeners to each child, the parent element listens for events from its children, leveraging event bubbling (where events propagate up the DOM tree).</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">How do you manipulate on an element's otributes and styles using the DOM?</div>
+          <div class="collapse-content">
+            <p>You can manipulate an element's attributes using `setAttribute()` or directly access properties, and change styles by modifying the `style` property (e.g., `element.style.color`).</p>
+          </div>
+        </div>
+     </div>
+      <!-- important FAQ end -->
+  </main>
+  <script src="./js/nav.js"></script>
+</body>
+</html>
