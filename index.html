@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,9 +51,22 @@
             <h1 class="text-xl font-bold my-4">Donate for Flood at Noakhali, Bangladesh</h1>
             <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="input-one" type="text" placeholder="Type here" class="input input-bordered w-full my-5" />
-            <button id="donate-one" class="btn btn-accent w-full" onclick="my_modal_3.showModal()">Donate Now</button>
+            <button id="donate-one" class="btn btn-accent w-full">Donate Now</button>
           </div>
-        </div>
+          <!-- modal content start -->
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box">
+                <h1 id="modal-heading" class="text-3xl text-center font-extrabold mb-2">Congrates!</h1>
+                <p class="flex justify-center align-center "> <img src="./assets/coin.png" alt="coin"> </p>
+                
+                <p class="py-4 text-center font-extrabold">Successfully</p>
+                <form method="dialog" class="text-center">
+                  <button class="btn btn-outline btn-accent">Close Confirmation</button>
+                </form>
+              </div>
+            </dialog>
+   <!-- modal content end -->
+           </div>
       <!--first card Nohakhali-flood end -->
       <!-- second card Feni-flood start -->
         <div class="hero-content flex-col lg:flex-row border border-[#1111111A] rounded-lg my-5">
@@ -61,15 +74,28 @@
             src="./assets/feni.png"
             class="max-w-full rounded-lg" />
           <div>
-            <div class="max-w-[110px] flex justify-center align-center py-3 rounded-lg gap-1 bg-[#1111110D] font-bold">
+            <div  class="max-w-[110px] flex justify-center align-center py-3 rounded-lg gap-1 bg-[#1111110D] font-bold">
               <img src="./assets/coin.png" alt="">
-                <span id="camp-one-balance">0</span>BDT
+                <span id="camp-two-balance">0</span>BDT
             </div>
             <h1 class="text-xl font-bold my-4">Donate for Flood Relief in Feni,Bangladesh</h1>
             <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full my-5" />
-            <button class="btn btn-accent w-full">Donate Now</button>
+            <input id="input-two" type="text" placeholder="Type here" class="input input-bordered w-full my-5" />
+            <button id="donate-two" class="btn btn-accent w-full">Donate Now</button>
           </div>
+           <!-- modal content start -->
+           <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+              <h1 id="modal-heading" class="text-3xl text-center font-extrabold mb-2">Congrates!</h1>
+              <p class="flex justify-center align-center "> <img src="./assets/coin.png" alt="coin"> </p>
+              
+              <p class="py-4 text-center font-extrabold">Successfully</p>
+              <form method="dialog" class="text-center">
+                <button class="btn btn-outline btn-accent">Close Confirmation</button>
+              </form>
+            </div>
+          </dialog>
+ <!-- modal content end -->
         </div>
      <!-- second card Feni flood end -->
       <!-- third and last quota start -->
@@ -80,13 +106,26 @@
           <div class="">
             <div class="max-w-[110px] flex justify-center align-center py-3 rounded-lg gap-1 bg-[#1111110D] font-bold">
               <img src="./assets/coin.png" alt="">
-                <span id="camp-one-balance">0</span>BDT
+                <span id="camp-three-balance">0</span>BDT
             </div>
             <h1 class="text-xl font-bold my-4">Aid for Injured in the Quota Movement</h1>
             <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full my-5" />
-            <button class="btn btn-accent w-full">Donate Now</button>
+            <input id="input-three" type="text" placeholder="Type here" class="input input-bordered w-full my-5" />
+            <button id="donate-three" class="btn btn-accent w-full">Donate Now</button>
           </div>
+           <!-- modal content start -->
+           <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+              <h1 id="modal-heading" class="text-3xl text-center font-extrabold mb-2">Congrates!</h1>
+              <p class="flex justify-center align-center "> <img src="./assets/coin.png" alt="coin"> </p>
+              
+              <p class="py-4 text-center font-extrabold">Successfully</p>
+              <form method="dialog" class="text-center">
+                <button class="btn btn-outline btn-accent">Close Confirmation</button>
+              </form>
+            </div>
+          </dialog>
+ <!-- modal content end -->
         </div>
     <!-- third and last quota end -->
       
