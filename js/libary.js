@@ -1,3 +1,5 @@
+
+
 // camp input-value function start
 function getInputValueById(id){
     let inputValue = document.getElementById(id).value;
@@ -13,3 +15,10 @@ function getInnerTextById(id){
     return balanceAmountNum;
 }
 // balance function end
+
+
+
+function history(id){
+    let history = document.getElementById(id).addEventListener('click',function(){});
+    return history;
+}
