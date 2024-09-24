@@ -6,7 +6,6 @@ document.getElementById('blog-btn').addEventListener('click',function(){
 // blog-button end
 
 // history function start
-
 document.getElementById('history-btn')
 .addEventListener('click',function(){
  document.getElementById('donation-btn').classList.remove('btn-accent');
@@ -14,8 +13,6 @@ document.getElementById('history-btn')
 document.getElementById('card-container').classList.add('hidden');
 document.getElementById('history-title').classList.remove('hidden');
 document.getElementById('currentDateTime').classList.remove('hidden');
-document.getElementById('currentDateTime2').classList.remove('hidden');
-document.getElementById('currentDateTime3').classList.remove('hidden');
 document.getElementById('history-content').classList.remove('hidden');
 })
 // history function end
@@ -115,12 +112,13 @@ else if(inputValue > 0){
 let div = document.createElement('div');
  div.classList.add('bg-white','border-2','border-[#1111111A]','p-5','shadow-lg','rounded-lg');
  div.innerHTML =`
- <h1 id="history-title" class="hidden my-2 text-2xl font-bold">${inputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
- <p id="currentDateTime2" class="hidden"></p>
+ <h1 id="history-title" class="hidden my-2 text-2xl font-bold">${inputValue} Taka is Donated for Flood Relief in Feni,Bangladesh, Bangladesh</h1>
+ <p id="currentDateTime" class="hidden"></p>
  `
   let historyContainer = document.getElementById('history-content');
   historyContainer.insertBefore(div,historyContainer.firstChild);
- return;
+  return;
+
  }
 
 
@@ -163,15 +161,17 @@ else if(inputValue > 0){
  let emptyInput = document.getElementById('input-three');
  emptyInput.value ='';
 //  history part 
+
+
 let div = document.createElement('div');
- div.classList.add('white','border-2','border-[#1111111A]','p-5','shadow-lg','rounded-lg');
+ div.classList.add('bg-white','border-2','border-[#1111111A]','p-5','shadow-lg','rounded-lg');
  div.innerHTML =`
- <h1 id="history-title" class="hidden my-2 text-2xl font-bold">${inputValue} Taka is Donated for famine-2024 at Nohakhali, Bangladesh</h1>
- <p id="currentDateTime3" class="hidden"></p>
+ <h1 id="history-title" class="hidden my-2 text-2xl font-bold">${inputValue} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh, Bangladesh</h1>
+ <p id="currentDateTime" class="hidden"></p>
  `
   let historyContainer = document.getElementById('history-content');
   historyContainer.insertBefore(div,historyContainer.firstChild);
- return;
+  return;
  }
 
  else{

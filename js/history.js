@@ -12,6 +12,4 @@ window.onclick = function(){
     ${dayName},${date} ${monthName} ${year},${hours}:${minutes}:${seconds}`;
     let standard = new Date().toString();
     document.getElementById('currentDateTime').innerText = standard;
-    document.getElementById('currentDateTime2').innerText = standard;
-    document.getElementById('currentDateTime3').innerText = standard;
 }
